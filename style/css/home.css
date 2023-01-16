@@ -1,0 +1,430 @@
+@font-face {
+  font-family: "Bogart Black";
+  src: url("/assets/fonts/Bogart-Black-trial.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bogart ExtraBold";
+  src: url("/assets/fonts/Bogart-Extrabold-trial.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bogart Bold";
+  src: url("/assets/fonts/Bogart-Bold-trial.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bogart SemiBold";
+  src: url("/assets/fonts/Bogart-Semibold-trial.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bogart Medium";
+  src: url("/assets/fonts/Bogart-Medium-trial.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bogart Regular";
+  src: url("/assets/fonts/Bogart-Regular-trial.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bogart Light";
+  src: url("/assets/fonts/Bogart-Light-trial.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bogart ExtraLight";
+  src: url("/assets/fonts/Bogart-Extralight-trial.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bogart Thin";
+  src: url("/assets/fonts/Bogart-Thin-trial.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bogart Black";
+  src: url("/assets/fonts/Bogart-Black-trial.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bogart ExtraBold";
+  src: url("/assets/fonts/Bogart-Extrabold-trial.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bogart Bold";
+  src: url("/assets/fonts/Bogart-Bold-trial.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bogart SemiBold";
+  src: url("/assets/fonts/Bogart-Semibold-trial.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bogart Medium";
+  src: url("/assets/fonts/Bogart-Medium-trial.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bogart Regular";
+  src: url("/assets/fonts/Bogart-Regular-trial.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bogart Light";
+  src: url("/assets/fonts/Bogart-Light-trial.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bogart ExtraLight";
+  src: url("/assets/fonts/Bogart-Extralight-trial.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bogart Thin";
+  src: url("/assets/fonts/Bogart-Thin-trial.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+body {
+  background-color: #000000;
+}
+
+.first-circle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 0px;
+  left: 0px;
+}
+
+.second-circle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 0px;
+}
+
+.third-circle-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  bottom: 0px;
+  left: 130px;
+}
+
+.c1 {
+  height: 200px;
+  width: 200px;
+  background-color: #eeeeee;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c2 {
+  height: 160px;
+  width: 160px;
+  background-color: #64f38c;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c3 {
+  height: 200px;
+  width: 200px;
+  background-color: #eeeeee;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c4 {
+  height: 160px;
+  width: 160px;
+  background-color: #64f38c;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c5 {
+  height: 200px;
+  width: 200px;
+  background-color: #eeeeee;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.c6 {
+  height: 160px;
+  width: 160px;
+  background-color: #ffb027;
+  border-radius: 50%;
+  position: absolute;
+}
+
+.home-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 0px;
+  height: 100vh;
+  width: 100vw;
+  position: relative;
+  overflow: hidden;
+}
+
+.home-container-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.home-title {
+  font-family: "Bogart Bold";
+  text-align: center;
+  font-size: 60px;
+  background: linear-gradient(89.29deg, #64f38c 10.32%, rgba(100, 243, 140, 0.785461) 21.4%, rgba(100, 243, 140, 0.541667) 40.13%, rgb(255, 176, 39) 108.19%, rgba(247, 157, 0, 0) 120.37%);
+  background: -webkit-linear-gradient(89.29deg, #64f38c 10.32%, rgba(100, 243, 140, 0.785461) 21.4%, rgba(100, 243, 140, 0.541667) 40.13%, rgb(255, 176, 39) 108.19%, rgba(247, 157, 0, 0) 120.37%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.text-container .main-text {
+  font-family: "Bogart Regular";
+  color: #ffffff;
+  text-align: center;
+  font-size: 25px;
+}
+.text-container .secondary-text {
+  font-family: "Bogart Regular";
+  color: #eeeeee;
+  text-align: center;
+  font-size: 20px;
+  margin-top: 50px;
+  margin-bottom: 30px;
+}
+
+.button-container {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+}
+.button-container button {
+  font-family: "Bogart Bold";
+  padding: 25px 70px;
+  border: none;
+  outline: none;
+  position: relative;
+  border-radius: 50px;
+  background: linear-gradient(89.29deg, #64f38c 10.32%, rgba(100, 243, 140, 0.785461) 21.4%, rgba(100, 243, 140, 0.541667) 40.13%, rgb(255, 176, 39) 108.19%, rgba(247, 157, 0, 0) 120.37%);
+  cursor: pointer;
+  z-index: 1;
+}
+.button-container button::before {
+  content: "";
+  position: absolute;
+  top: 2px;
+  right: 2px;
+  bottom: 2px;
+  left: 2px;
+  border-radius: 49px;
+  background-color: #000000;
+  z-index: -1;
+}
+.button-container button::after {
+  content: attr(data);
+  font-size: 16px;
+  background: linear-gradient(89.29deg, #64f38c 10.32%, rgba(100, 243, 140, 0.785461) 21.4%, rgba(100, 243, 140, 0.541667) 40.13%, rgb(255, 176, 39) 108.19%, rgba(247, 157, 0, 0) 120.37%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  color: transparent;
+  transition: 200ms;
+}
+.button-container button:hover::before {
+  opacity: 50%;
+  top: 0px;
+  right: 0px;
+  bottom: 0px;
+  left: 0px;
+}
+.button-container button:hover::after {
+  color: #eeeeee;
+}
+
+@media screen and (max-width: 320px) {
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .home-title {
+    text-align: center;
+    font-size: 30px;
+  }
+  .home-container-content {
+    padding: 10px;
+  }
+  .first-circle-container {
+    top: 100px;
+    left: -25px;
+  }
+  .second-circle-container {
+    right: -25px;
+  }
+  .third-circle-container {
+    bottom: 0px;
+    left: 0px;
+  }
+  .c1 {
+    height: 100px;
+    width: 100px;
+    background-color: #eeeeee;
+    border-radius: 50%;
+    position: absolute;
+  }
+  .c2 {
+    height: 60px;
+    width: 60px;
+    background-color: #64f38c;
+    border-radius: 50%;
+    position: absolute;
+  }
+  .c3 {
+    height: 100px;
+    width: 100px;
+    background-color: #eeeeee;
+    border-radius: 50%;
+    position: absolute;
+  }
+  .c4 {
+    height: 60px;
+    width: 60px;
+    background-color: #64f38c;
+    border-radius: 50%;
+    position: absolute;
+  }
+  .c5 {
+    height: 100px;
+    width: 100px;
+    background-color: #eeeeee;
+    border-radius: 50%;
+    position: absolute;
+  }
+  .c6 {
+    height: 60px;
+    width: 60px;
+    background-color: #ffb027;
+    border-radius: 50%;
+    position: absolute;
+  }
+  .text-container .main-text {
+    font-size: 20px;
+  }
+  .text-container .secondary-text {
+    font-size: 15px;
+  }
+}
+@media screen and (min-width: 320px) and (max-width: 700px) {
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+  .home-title {
+    text-align: center;
+    font-size: 40px;
+  }
+  .home-container-content {
+    padding: 10px;
+  }
+  .first-circle-container {
+    top: 0px;
+    left: 0px;
+  }
+  .second-circle-container {
+    right: -25px;
+    bottom: 220px;
+  }
+  .third-circle-container {
+    bottom: 0px;
+    left: 0px;
+  }
+  .c1 {
+    height: 120px;
+    width: 120px;
+    background-color: #eeeeee;
+    border-radius: 50%;
+    position: absolute;
+  }
+  .c2 {
+    height: 80px;
+    width: 80px;
+    background-color: #64f38c;
+    border-radius: 50%;
+    position: absolute;
+  }
+  .c3 {
+    height: 120px;
+    width: 120px;
+    background-color: #eeeeee;
+    border-radius: 50%;
+    position: absolute;
+  }
+  .c4 {
+    height: 80px;
+    width: 80px;
+    background-color: #64f38c;
+    border-radius: 50%;
+    position: absolute;
+  }
+  .c5 {
+    height: 120px;
+    width: 120px;
+    background-color: #eeeeee;
+    border-radius: 50%;
+    position: absolute;
+  }
+  .c6 {
+    height: 80px;
+    width: 80px;
+    background-color: #ffb027;
+    border-radius: 50%;
+    position: absolute;
+  }
+}

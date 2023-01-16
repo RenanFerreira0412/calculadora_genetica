@@ -1,0 +1,125 @@
+@import "colors";
+@import "circle";
+
+@media screen and (max-width: 320px) {
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .home-title {
+    text-align: center;
+    font-size: 30px;
+  }
+
+  .home-container-content {
+    padding: 10px;
+  }
+
+  .first-circle-container {
+    top: 100px;
+    left: -25px;
+  }
+
+  .second-circle-container {
+    right: -25px;
+  }
+
+  .third-circle-container {
+    bottom: 0px;
+    left: 0px;
+  }
+
+  .c1 {
+    @include circle(100px, 100px, $light-color);
+  }
+
+  .c2 {
+    @include circle(60px, 60px, $green-color);
+  }
+
+  .c3 {
+    @include circle(100px, 100px, $light-color);
+  }
+
+  .c4 {
+    @include circle(60px, 60px, $green-color);
+  }
+
+  .c5 {
+    @include circle(100px, 100px, $light-color);
+  }
+
+  .c6 {
+    @include circle(60px, 60px, $orange-color);
+  }
+
+  .text-container {
+    .main-text {
+      font-size: 20px;
+    }
+
+    .secondary-text {
+      font-size: 15px;
+    }
+  }
+}
+
+@media screen and (min-width: 320px) and (max-width: 700px) {
+  .button-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 30px;
+  }
+
+  .home-title {
+    text-align: center;
+    font-size: 40px;
+  }
+
+  .home-container-content {
+    padding: 10px;
+  }
+
+  .first-circle-container {
+    top: 0px;
+    left: 0px;
+  }
+
+  .second-circle-container {
+    right: -25px;
+    bottom: 220px;
+  }
+
+  .third-circle-container {
+    bottom: 0px;
+    left: 0px;
+  }
+
+  .c1 {
+    @include circle(120px, 120px, $light-color);
+  }
+
+  .c2 {
+    @include circle(80px, 80px, $green-color);
+  }
+
+  .c3 {
+    @include circle(120px, 120px, $light-color);
+  }
+
+  .c4 {
+    @include circle(80px, 80px, $green-color);
+  }
+
+  .c5 {
+    @include circle(120px, 120px, $light-color);
+  }
+
+  .c6 {
+    @include circle(80px, 80px, $orange-color);
+  }
+}

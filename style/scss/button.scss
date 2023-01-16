@@ -1,0 +1,14 @@
+@import "colors";
+@import "font";
+
+@mixin customButton() {
+  font-family: $bogart-bold;
+  padding: 25px 70px;
+  border: none;
+  outline: none;
+  position: relative;
+  border-radius: 50px;
+  background: linear-gradient($gradient);
+  cursor: pointer;
+  z-index: 1;
+}

@@ -1,0 +1,251 @@
+@font-face {
+  font-family: "Bogart Black";
+  src: url("/assets/fonts/Bogart-Black-trial.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bogart ExtraBold";
+  src: url("/assets/fonts/Bogart-Extrabold-trial.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bogart Bold";
+  src: url("/assets/fonts/Bogart-Bold-trial.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bogart SemiBold";
+  src: url("/assets/fonts/Bogart-Semibold-trial.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bogart Medium";
+  src: url("/assets/fonts/Bogart-Medium-trial.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bogart Regular";
+  src: url("/assets/fonts/Bogart-Regular-trial.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bogart Light";
+  src: url("/assets/fonts/Bogart-Light-trial.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bogart ExtraLight";
+  src: url("/assets/fonts/Bogart-Extralight-trial.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bogart Thin";
+  src: url("/assets/fonts/Bogart-Thin-trial.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}
+.form-page {
+  padding: 16px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.form-title {
+  font-size: 35px;
+  color: #ffffff;
+  font-family: "Bogart Bold";
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 20px;
+  color: #eeeeee;
+  font-family: "Bogart Regular";
+  text-align: center;
+}
+
+#form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
+  color: #ffffff;
+  font-family: "Bogart Regular";
+  font-size: 18px;
+}
+#form button {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 60px;
+  padding-right: 60px;
+  border: 0px;
+  background: #000000;
+  color: #ffffff;
+  font-family: "Bogart Bold";
+  font-size: 20px;
+  border-radius: 8px;
+  border: solid 3px #64f38c;
+  cursor: pointer;
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 1000px;
+}
+.form-group input {
+  margin: 0px;
+  background: #000000;
+  padding: 15px;
+  color: #ffffff;
+  font-family: "Bogart Regular";
+  border-radius: 8px;
+  border: solid 3px #64f38c;
+}
+.form-group input::-moz-placeholder {
+  color: #eeeeee;
+  font-family: "Bogart Regular";
+}
+.form-group input:-ms-input-placeholder {
+  color: #eeeeee;
+  font-family: "Bogart Regular";
+}
+.form-group input::placeholder {
+  color: #eeeeee;
+  font-family: "Bogart Regular";
+}
+
+i {
+  color: #eeeeee;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.result-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  margin-top: 70px;
+  gap: 20px;
+  color: #eeeeee;
+  font-family: "Bogart Bold";
+}
+.result-container p {
+  font-size: 30px;
+  text-align: center;
+}
+
+table {
+  display: table;
+  border-collapse: collapse;
+  text-indent: initial;
+  border-spacing: 10px;
+  width: 100%;
+  font-family: cursive;
+  border: solid 1px #eeeeee;
+}
+
+tr {
+  border: solid 1px #eeeeee;
+}
+
+td,
+th {
+  padding: 10px;
+}
+
+th {
+  text-align: center;
+}
+
+.error-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+}
+.error-container p {
+  text-align: center;
+}
+
+#errorIcon {
+  font-size: 16px;
+  color: #ef476f;
+}
+
+.error-message {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  font-size: 16px;
+  font-family: cursive;
+}
+
+@media screen and (max-width: 1020px) {
+  .form-group {
+    width: 800px;
+  }
+}
+@media screen and (max-width: 820px) {
+  .form-group {
+    width: 600px;
+  }
+  .form-group label {
+    font-size: 14px;
+  }
+  .form-title {
+    font-size: 30px;
+  }
+  .subtitle {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .form-group {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .form-group {
+    width: 200px;
+  }
+  .form-title {
+    font-size: 20px;
+  }
+  .subtitle {
+    font-size: 15px;
+  }
+  #form button {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 15px;
+  }
+  .error-container p {
+    text-align: center;
+    font-size: 14px;
+  }
+  #errorIcon {
+    font-size: 16px;
+  }
+}

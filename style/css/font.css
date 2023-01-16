@@ -1,0 +1,54 @@
+@font-face {
+  font-family: "Bogart Black";
+  src: url("/assets/fonts/Bogart-Black-trial.ttf") format("truetype");
+  font-weight: 900;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bogart ExtraBold";
+  src: url("/assets/fonts/Bogart-Extrabold-trial.ttf") format("truetype");
+  font-weight: 800;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bogart Bold";
+  src: url("/assets/fonts/Bogart-Bold-trial.ttf") format("truetype");
+  font-weight: 700;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bogart SemiBold";
+  src: url("/assets/fonts/Bogart-Semibold-trial.ttf") format("truetype");
+  font-weight: 600;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bogart Medium";
+  src: url("/assets/fonts/Bogart-Medium-trial.ttf") format("truetype");
+  font-weight: 500;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bogart Regular";
+  src: url("/assets/fonts/Bogart-Regular-trial.ttf") format("truetype");
+  font-weight: 400;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bogart Light";
+  src: url("/assets/fonts/Bogart-Light-trial.ttf") format("truetype");
+  font-weight: 300;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bogart ExtraLight";
+  src: url("/assets/fonts/Bogart-Extralight-trial.ttf") format("truetype");
+  font-weight: 200;
+  font-style: normal;
+}
+@font-face {
+  font-family: "Bogart Thin";
+  src: url("/assets/fonts/Bogart-Thin-trial.ttf") format("truetype");
+  font-weight: 100;
+  font-style: normal;
+}

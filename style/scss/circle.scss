@@ -1,0 +1,14 @@
+@mixin circle($height, $width, $color) {
+  height: $height;
+  width: $width;
+  background-color: $color;
+  border-radius: 50%;
+  position: absolute;
+}
+
+@mixin circleContainer() {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+}

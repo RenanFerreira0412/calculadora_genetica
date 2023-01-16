@@ -1,0 +1,146 @@
+@import "colors";
+@import "font";
+@import "utils";
+
+.form-page {
+  padding: 16px;
+}
+
+.form-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 30px;
+}
+
+.form-title {
+  font-size: 35px;
+  color: $white-color;
+  font-family: $bogart-bold;
+  text-align: center;
+}
+
+.subtitle {
+  font-size: 20px;
+  color: $light-color;
+  font-family: $bogart-regular;
+  text-align: center;
+}
+
+#form {
+  @include column(35px);
+  color: $white-color;
+  font-family: $bogart-regular;
+  font-size: 18px;
+
+  button {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border: 0px;
+    background: $dark-color;
+    color: $white-color;
+    font-family: $bogart-bold;
+    font-size: 20px;
+    border-radius: 8px;
+    border: solid 3px $green-color;
+    cursor: pointer;
+  }
+}
+
+.form-group {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 5px;
+  width: 1000px;
+
+  input {
+    margin: 0px;
+    background: $dark-color;
+    padding: 15px;
+    color: $white-color;
+    font-family: $bogart-regular;
+    border-radius: 8px;
+    border: solid 3px $green-color;
+  }
+
+  input::placeholder {
+    color: $light-color;
+    font-family: $bogart-regular;
+  }
+}
+
+i {
+  color: $light-color;
+  font-size: 25px;
+  cursor: pointer;
+}
+
+.result-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-items: center;
+  margin-top: 70px;
+  gap: 20px;
+  color: $light-color;
+  font-family: $bogart-bold;
+
+  p {
+    font-size: 30px;
+    text-align: center;
+  }
+}
+
+table {
+  display: table;
+  border-collapse: collapse;
+  text-indent: initial;
+  border-spacing: 10px;
+  width: 100%;
+  font-family: cursive;
+  border: solid 1px $light-color;
+}
+
+tr {
+  border: solid 1px $light-color;
+}
+
+td,
+th {
+  padding: 10px;
+}
+
+th {
+  text-align: center;
+}
+
+.error-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 20px;
+
+  p {
+    text-align: center;
+  }
+}
+
+#errorIcon {
+  font-size: 16px;
+  color: $red-color;
+}
+
+.error-message {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 15px;
+  font-size: 16px;
+  font-family: cursive;
+}
+
+@import "responsive_form_screen";

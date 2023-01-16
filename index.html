@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="pt">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculadora Genética</title>
+    <!--Arquivos de estilo-->
+    <link rel="stylesheet" href="style/css/home.css" />
+    <link rel="stylesheet" href="style/css/form.css" />
+
+    <script
+      type="text/javascript"
+      src="https://cdnjs.cloudflare.com/ajax/libs/vue/2.1.8/vue.js"
+    ></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+
+    <!--Fontawesome-->
+    <script
+      src="https://kit.fontawesome.com/b619948049.js"
+      crossorigin="anonymous"
+    ></script>
+  </head>
+
+  <body>
+    <div id="app">
+      <div class="home-container" v-if="isHomePage">
+        <div class="first-circle-container">
+          <div class="c1"></div>
+          <div class="c2"></div>
+        </div>
+
+        <div class="second-circle-container">
+          <div class="c3"></div>
+          <div class="c4"></div>
+        </div>
+
+        <div class="third-circle-container">
+          <div class="c5"></div>
+          <div class="c6"></div>
+        </div>
+        <div class="home-container-content">
+          <p class="home-title">Calculadora Genética</p>
+          <div class="text-container">
+            <p class="main-text">
+              Identifique os genótipos resultantes do <br />
+              cruzamento genético entre dois indivíduos.
+            </p>
+            <p class="secondary-text">
+              Selecione uma das Leis de Mendel para podermos começar.
+            </p>
+          </div>
+          <div class="button-container">
+            <button data="Primeira Lei" @click="primeiraLei"></button>
+            <button data="Segunda Lei" @click="segundaLei"></button>
+          </div>
+        </div>
+      </div>
+
+      <div class="form-page" v-else>
+        <div>
+          <i v-on:click="backToHomePage" class="fa-solid fa-angle-left"></i>
+          <div class="form-container">
+            <p class="form-title">{{novo_genotipo.title}}</p>
+            <p class="subtitle">
+              Informe os genótipos dos indivíduos a serem cruzados
+            </p>
+
+            <div>
+              <form id="form">
+                <div class="form-group">
+                  <label for="genotipo1">Primeiro genótipo</label>
+                  <input
+                    type="text"
+                    id="genotipo1"
+                    name="genotipo1"
+                    v-model="novo_genotipo.g1"
+                    v-on:keypress="isLetter($event)"
+                    placeholder="Informe o genótipo do primeiro indivíduo. Ex: Aa, AA, aa, etc"
+                  />
+                </div>
+
+                <div class="form-group">
+                  <label for="genotipo2">Segundo genótipo</label>
+                  <input
+                    type="text"
+                    id="genotipo2"
+                    name="genotipo2"
+                    v-model="novo_genotipo.g2"
+                    v-on:keypress="isLetter($event)"
+                    placeholder="Informe o genótipo do primeiro indivíduo. Ex: Aa, AA, aa, etc"
+                  />
+                </div>
+
+                <div class="error-container" v-if="errors.length">
+                  <p>Corrija os seguintes erros encontrados:</p>
+
+                  <div class="error-message" v-for="error in errors">
+                    <i id="errorIcon" class="fa-solid fa-xmark"></i>
+                    <p>{{ error }}</p>
+                  </div>
+                </div>
+
+                <button
+                  type="button"
+                  @click="cruzarGenotipos"
+                  v-if="isBtnCruzar"
+                >
+                  Cruzar
+                </button>
+                <button type="button" @click="recomecar" v-else>
+                  Recomeçar!
+                </button>
+              </form>
+            </div>
+          </div>
+        </div>
+
+        <div class="result-container" v-if="mostrar_resultado">
+          <p>Genótipos Resultantes</p>
+
+          <div v-if="resulPrimeiraLei">
+            <table class="listGenesLei1">
+              <thead>
+                <tr>
+                  <th scope="col">Qtd</th>
+                  <th scope="col">Genótipos</th>
+                  <th scope="col">Probabilidade</th>
+                  <th scope="col">Tipo de Alelo</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="gene in elementCountsLei1">
+                  <th>{{gene.qtd}}</th>
+                  <th>{{gene.value}}</th>
+                  <th>{{(gene.qtd / 4) * 100}} %</th>
+                  <th>{{gene.tipo}}</th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+
+          <div v-else>
+            <table class="listGenesLei2">
+              <thead>
+                <tr>
+                  <th scope="col">Qtd</th>
+                  <th scope="col">Genótipos</th>
+                  <th scope="col">Probabilidade</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr v-for="gene in elementCountsLei2">
+                  <th>{{gene.qtd}}</th>
+                  <th>{{gene.value}}</th>
+                  <th>{{(gene.qtd / 16) * 100}} %</th>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script type="text/javascript" src="js/script.js"></script>
+  </body>
+</html>

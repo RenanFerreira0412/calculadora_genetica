@@ -1,0 +1,49 @@
+@media screen and (max-width: 1020px) {
+  .form-group {
+    width: 800px;
+  }
+}
+@media screen and (max-width: 820px) {
+  .form-group {
+    width: 600px;
+  }
+  .form-group label {
+    font-size: 14px;
+  }
+  .form-title {
+    font-size: 30px;
+  }
+  .subtitle {
+    font-size: 18px;
+  }
+}
+@media screen and (max-width: 620px) {
+  .form-group {
+    width: 400px;
+  }
+}
+@media screen and (max-width: 420px) {
+  .form-group {
+    width: 200px;
+  }
+  .form-title {
+    font-size: 20px;
+  }
+  .subtitle {
+    font-size: 15px;
+  }
+  #form button {
+    padding-top: 8px;
+    padding-bottom: 8px;
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 15px;
+  }
+  .error-container p {
+    text-align: center;
+    font-size: 14px;
+  }
+  #errorIcon {
+    font-size: 16px;
+  }
+}

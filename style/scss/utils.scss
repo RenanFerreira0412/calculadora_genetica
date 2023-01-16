@@ -1,0 +1,17 @@
+@mixin addVerticalSpace($top, $bottom) {
+  margin-top: $top;
+  margin-bottom: $bottom;
+}
+
+@mixin addHorizontalSpace($left, $right) {
+  margin-left: $left;
+  margin-right: $right;
+}
+
+@mixin column($gap) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: $gap;
+}
