@@ -1,2 +1,2 @@
 # calculadora_genetica
-Aplicativo que realiza o cruzamento genético de dois indivíduos utilizando as leis de Mendel.
+Calculadora Genética responsável por realizar o cruzamento genético de indivíduos utilizando as Leis de Mendel, informando os genótipos resultantes. 
